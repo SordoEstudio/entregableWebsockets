@@ -1,0 +1,24 @@
+<h1>Products Handlebars</h1> 
+<form id="form">
+    <label >Nombre:</label>
+    <input id="title" type="text" name="title"/>
+    <br><br>
+    <label i>Precio:</label>
+    <input id="price" type="number"/>
+    <br><br>
+    <label>Código:</label>
+    <input id="code" type="text"/>
+    <br><br>
+    <label >Cantidad:</label>
+    <input id="stock" type="number"/>
+    <br><br>
+    <label >Descripcion:</label>
+    <input id="description" type="text"/>
+    <br><br>
+    <input type="submit" value="AGREGAR"/>
+</form>
+<div>
+{{>showproducts}}</div>
+<div id="updateProducts"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/index.js"></script>
